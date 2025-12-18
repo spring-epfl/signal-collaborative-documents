@@ -1,0 +1,23 @@
+{
+  "name": "automerge-benchmarks",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "measure-bundle": "([ -f \"./dist/bundle.js\" ] || npm run dist) && node ../../bin/measure-bundle.js ../../node_modules/@automerge/automerge-wasm/bundler/automerge_wasm_bg.wasm",
+    "start": "node --expose-gc run.js $1",
+    "start:b1": "npm start -- b1",
+    "start:b2": "npm start -- b2",
+    "start:b3": "npm start -- b3",
+    "start:bun": "npm run measure-bundle && bun run run.js && npm run table",
+    "start:browser": "rollup -c && 0serve -o benchmark.html",
+    "table": "echo 'Automerge results: \n\n' && node ../../bin/render-table.js ../results.json 6000 automerge",
+    "dist": "npm run clean && rollup -c && gzip --keep dist/*"
+  },
+  "dependencies": {
+    "@automerge/automerge": "^2.1.10",
+    "@automerge/automerge-wasm": "^0.17.0",
+    "@automerge/automerge-repo": "^2.0.1",
+    "@automerge/automerge-repo-network-websocket": "^2.0.1",
+    "@automerge/automerge-repo-storage-nodefs": "^2.0.1"
+  }
+}

@@ -1,0 +1,17 @@
+services:
+  e2ee-cd:
+    build: .
+    image: e2ee-cd:latest
+    container_name: e2ee-cd
+    stdin_open: true
+    tty: true
+    command: ["/bin/bash", "-l"]
+    volumes:
+      - ./signal-data:/e2ee-cd/signal-data
+      - ./crdt-benchmarks:/e2ee-cd/crdt-benchmarks
+      - ./benchmark_data:/e2ee-cd/benchmark_data
+      - ./benchmark_plots:/e2ee-cd/benchmark_plots
+    cap_add:
+      - NET_ADMIN
+    env_file:
+      - .env    

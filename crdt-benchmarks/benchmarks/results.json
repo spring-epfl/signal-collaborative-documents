@@ -1,0 +1,35 @@
+{
+  "100": {
+    "[B2-Signal] Concurrent non-overlapping edits (time)": {
+      "automerge": "25753 ms"
+    },
+    "[B2-Signal] Concurrent non-overlapping edits (updateSize)": {
+      "automerge": "29792 bytes"
+    },
+    "[B2-Signal] Concurrent non-overlapping edits (encodeTime)": {
+      "automerge": "3 ms"
+    },
+    "[B2-Signal] Concurrent non-overlapping edits (memUsed)": {
+      "automerge": "928 B"
+    },
+    "[B2-Signal] Concurrent non-overlapping edits (parseTime)": {
+      "automerge": "23 ms"
+    },
+    "[B3-Signal] Concurrent overlapping edits (time)": {
+      "automerge": "25067 ms"
+    },
+    "[B3-Signal] Concurrent overlapping edits (updateSize)": {
+      "automerge": "29647 bytes"
+    },
+    "[B3-Signal] Concurrent overlapping edits (encodeTime)": {
+      "automerge": "4 ms"
+    },
+    "[B3-Signal] Concurrent overlapping edits (memUsed)": {
+      "automerge": "824 B"
+    },
+    "[B3-Signal] Concurrent overlapping edits (parseTime)": {
+      "automerge": "39 ms"
+    }
+  },
+  "1000": {}
+}
