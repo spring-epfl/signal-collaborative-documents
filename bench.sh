@@ -34,7 +34,7 @@ done
 
 # Generate plots
 # uv run --with jupyter jupyter execute analysis-1.ipynb
-# uv run --with jupyter jupyter execute analysis_2-3.ipynb
+# uv run --with jupyter jupyter execute analysis-2-3.ipynb
 # uv run --with jupyter jupyter execute analysis_4.ipynb
 
 # Tear down docker containers
