@@ -29,6 +29,186 @@
     },
     "[B3-Signal] Concurrent overlapping edits (parseTime)": {
       "automerge": "39 ms"
+    },
+    "[B4] Insert string of length 1 (time)": {
+      "automerge": "2 ms"
+    },
+    "[B4] Insert string of length 1 (avgUpdateSize)": {
+      "automerge": "191 bytes"
+    },
+    "[B4] Insert string of length 1 (encodeTime)": {
+      "automerge": "0 ms"
+    },
+    "[B4] Insert string of length 1 (docSize)": {
+      "automerge": "192 bytes"
+    },
+    "[B4] Insert string of length 1 (memUsed)": {
+      "automerge": "0 B"
+    },
+    "[B4] Insert string of length 1 (parseTime)": {
+      "automerge": "18 ms"
+    },
+    "[B4] Insert string of length 5 (time)": {
+      "automerge": "1 ms"
+    },
+    "[B4] Insert string of length 5 (avgUpdateSize)": {
+      "automerge": "204 bytes"
+    },
+    "[B4] Insert string of length 5 (encodeTime)": {
+      "automerge": "0 ms"
+    },
+    "[B4] Insert string of length 5 (docSize)": {
+      "automerge": "206 bytes"
+    },
+    "[B4] Insert string of length 5 (memUsed)": {
+      "automerge": "0 B"
+    },
+    "[B4] Insert string of length 5 (parseTime)": {
+      "automerge": "14 ms"
+    },
+    "[B4] Insert string of length 10 (time)": {
+      "automerge": "0 ms"
+    },
+    "[B4] Insert string of length 10 (avgUpdateSize)": {
+      "automerge": "209 bytes"
+    },
+    "[B4] Insert string of length 10 (encodeTime)": {
+      "automerge": "0 ms"
+    },
+    "[B4] Insert string of length 10 (docSize)": {
+      "automerge": "211 bytes"
+    },
+    "[B4] Insert string of length 10 (memUsed)": {
+      "automerge": "5.2 kB"
+    },
+    "[B4] Insert string of length 10 (parseTime)": {
+      "automerge": "18 ms"
+    },
+    "[B4] Insert string of length 50 (time)": {
+      "automerge": "1 ms"
+    },
+    "[B4] Insert string of length 50 (avgUpdateSize)": {
+      "automerge": "250 bytes"
+    },
+    "[B4] Insert string of length 50 (encodeTime)": {
+      "automerge": "0 ms"
+    },
+    "[B4] Insert string of length 50 (docSize)": {
+      "automerge": "251 bytes"
+    },
+    "[B4] Insert string of length 50 (memUsed)": {
+      "automerge": "0 B"
+    },
+    "[B4] Insert string of length 50 (parseTime)": {
+      "automerge": "18 ms"
+    },
+    "[B4] Insert string of length 100 (time)": {
+      "automerge": "1 ms"
+    },
+    "[B4] Insert string of length 100 (avgUpdateSize)": {
+      "automerge": "307 bytes"
+    },
+    "[B4] Insert string of length 100 (encodeTime)": {
+      "automerge": "0 ms"
+    },
+    "[B4] Insert string of length 100 (docSize)": {
+      "automerge": "311 bytes"
+    },
+    "[B4] Insert string of length 100 (memUsed)": {
+      "automerge": "0 B"
+    },
+    "[B4] Insert string of length 100 (parseTime)": {
+      "automerge": "16 ms"
+    },
+    "[B4] Insert string of length 500 (time)": {
+      "automerge": "3 ms"
+    },
+    "[B4] Insert string of length 500 (avgUpdateSize)": {
+      "automerge": "709 bytes"
+    },
+    "[B4] Insert string of length 500 (encodeTime)": {
+      "automerge": "1 ms"
+    },
+    "[B4] Insert string of length 500 (docSize)": {
+      "automerge": "534 bytes"
+    },
+    "[B4] Insert string of length 500 (memUsed)": {
+      "automerge": "0 B"
+    },
+    "[B4] Insert string of length 500 (parseTime)": {
+      "automerge": "19 ms"
+    },
+    "[B4] Insert string of length 1000 (time)": {
+      "automerge": "4 ms"
+    },
+    "[B4] Insert string of length 1000 (avgUpdateSize)": {
+      "automerge": "1209 bytes"
+    },
+    "[B4] Insert string of length 1000 (encodeTime)": {
+      "automerge": "1 ms"
+    },
+    "[B4] Insert string of length 1000 (docSize)": {
+      "automerge": "835 bytes"
+    },
+    "[B4] Insert string of length 1000 (memUsed)": {
+      "automerge": "0 B"
+    },
+    "[B4] Insert string of length 1000 (parseTime)": {
+      "automerge": "19 ms"
+    },
+    "[B4] Insert string of length 5000 (time)": {
+      "automerge": "18 ms"
+    },
+    "[B4] Insert string of length 5000 (avgUpdateSize)": {
+      "automerge": "5209 bytes"
+    },
+    "[B4] Insert string of length 5000 (encodeTime)": {
+      "automerge": "2 ms"
+    },
+    "[B4] Insert string of length 5000 (docSize)": {
+      "automerge": "3342 bytes"
+    },
+    "[B4] Insert string of length 5000 (memUsed)": {
+      "automerge": "2.1 kB"
+    },
+    "[B4] Insert string of length 5000 (parseTime)": {
+      "automerge": "19 ms"
+    },
+    "[B4] Insert string of length 10000 (time)": {
+      "automerge": "36 ms"
+    },
+    "[B4] Insert string of length 10000 (avgUpdateSize)": {
+      "automerge": "10216 bytes"
+    },
+    "[B4] Insert string of length 10000 (encodeTime)": {
+      "automerge": "3 ms"
+    },
+    "[B4] Insert string of length 10000 (docSize)": {
+      "automerge": "6590 bytes"
+    },
+    "[B4] Insert string of length 10000 (memUsed)": {
+      "automerge": "6.9 kB"
+    },
+    "[B4] Insert string of length 10000 (parseTime)": {
+      "automerge": "26 ms"
+    },
+    "[B4] Insert string of length 50000 (time)": {
+      "automerge": "199 ms"
+    },
+    "[B4] Insert string of length 50000 (avgUpdateSize)": {
+      "automerge": "50219 bytes"
+    },
+    "[B4] Insert string of length 50000 (encodeTime)": {
+      "automerge": "10 ms"
+    },
+    "[B4] Insert string of length 50000 (docSize)": {
+      "automerge": "32515 bytes"
+    },
+    "[B4] Insert string of length 50000 (memUsed)": {
+      "automerge": "6.2 kB"
+    },
+    "[B4] Insert string of length 50000 (parseTime)": {
+      "automerge": "83 ms"
     }
   },
   "1000": {}

@@ -1,11 +1,11 @@
 crdt,benchmark,editSize,localOpTimeMs,remoteApplyTimeMs,parseTimeMs,updateCount,totalUpdateBytes,avgUpdateBytes
-automerge,"[B4] Insert string of length 1",1,1,1,1,1,191,191
-automerge,"[B4] Insert string of length 5",5,0,0,0,1,204,204
+automerge,"[B4] Insert string of length 1",1,1,1,0,1,191,191
+automerge,"[B4] Insert string of length 5",5,0,1,0,1,204,204
 automerge,"[B4] Insert string of length 10",10,0,0,1,1,209,209
-automerge,"[B4] Insert string of length 50",50,1,0,0,1,250,250
+automerge,"[B4] Insert string of length 50",50,0,1,0,1,250,250
 automerge,"[B4] Insert string of length 100",100,1,0,1,1,307,307
-automerge,"[B4] Insert string of length 500",500,0,3,1,1,709,709
-automerge,"[B4] Insert string of length 1000",1000,2,3,1,1,1209,1209
-automerge,"[B4] Insert string of length 5000",5000,6,11,7,1,5209,5209
-automerge,"[B4] Insert string of length 10000",10000,11,25,13,1,10216,10216
-automerge,"[B4] Insert string of length 50000",50000,63,144,66,1,50219,50219
+automerge,"[B4] Insert string of length 500",500,1,2,1,1,709,709
+automerge,"[B4] Insert string of length 1000",1000,2,3,2,1,1209,1209
+automerge,"[B4] Insert string of length 5000",5000,6,12,7,1,5209,5209
+automerge,"[B4] Insert string of length 10000",10000,12,24,13,1,10216,10216
+automerge,"[B4] Insert string of length 50000",50000,62,137,66,1,50219,50219
