@@ -10,7 +10,7 @@ FROM ubuntu:24.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG NODE_MAJOR=18
-ARG SIGNAL_CLI_VERSION=0.13.14
+ARG SIGNAL_CLI_VERSION=0.14.0
 
 # Runtime deps: Java, Node, network tools, zip/unzip, etc.
 RUN apt-get update && apt-get install -y --no-install-recommends \
