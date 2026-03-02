@@ -2,7 +2,10 @@
 
 ## Dependencies
 
-You will need Docker to build and run our Docker container. Our [Dockerfile](Dockerfile) lists our internal dependencies (including node and signal-cli). To generate plots from the raw benchmark data, you will need [uv](https://docs.astral.sh/uv/).
+You will need Docker to build and run our Docker container. Additionally, you will need [node and npm](https://nodejs.org/en/download/) and [signal-cli](https://github.com/AsamK/signal-cli). 
+To generate plots from the raw benchmark data, you will need [uv](https://docs.astral.sh/uv/).
+
+We give scripts for installing dependencies on Linux (`./install-dependencies-linux.sh`) and MacOS (`./install-dependencies-macos.sh`). You may either call these scripts directly, or manually follow the installation commands therein. 
 
 ## Benchmarking
 
@@ -38,7 +41,7 @@ For usability, you might want to `source .env`, which exports the variables `ACC
 
 If you get a warning `WARN  MultiAccountManager - Ignoring $NUMBER: User is not registered. (NotRegisteredException)`: register the signal number as follows (see [signal-cli Wiki](https://github.com/AsamK/signal-cli/wiki/Linking-other-devices-(Provisioning))):
 
- ```bash
+```bash
 signal-cli --config=./signal-data/signal-multiaccount link -n "${OPTIONAL_DEVICE_NAME} | tee >(xargs -L 1 qrencode -t utf8)
 ```
 Then scan the QR code with a primary device where you are already logged in with the Signal account for `$NUMBER`.
