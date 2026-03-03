@@ -2,16 +2,14 @@
 set -euo pipefail
 
 # Load env vars if present
-[ -f .env ] && . .env
+[ -f .env ] && . ./.env
 
-# Build docker image
-docker-compose up --build -d
+docker-compose up 
 
- # Run benchmarks
-./b4.sh
+# Run benchmarks
+docker exec -it e2ee-cd /bin/bash  ./b4.sh
+
+docker-compose down
 
 # Generate plots
 uv run --with jupyter jupyter execute analysis-4.ipynb
-
-# Tear down docker containers
-docker-compose down

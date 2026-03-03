@@ -7,11 +7,12 @@ services:
     tty: true
     command: ["/bin/bash", "-l"]
     volumes:
-      - ./signal-data:/e2ee-cd/signal-data
+      - .:/e2ee-cd
       - ./crdt-benchmarks:/e2ee-cd/crdt-benchmarks
+      - ./signal-data:/e2ee-cd/signal-data
       - ./benchmark_data:/e2ee-cd/benchmark_data
       - ./benchmark_plots:/e2ee-cd/benchmark_plots
     cap_add:
       - NET_ADMIN
     env_file:
-      - .env    
+      - .env

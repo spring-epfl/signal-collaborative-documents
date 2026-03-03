@@ -14,7 +14,7 @@ if [ "$MODE" != "slow" ] && [ "$MODE" != "fast" ] && [ "$MODE" != "off" ]; then
 fi
 
 # Load env vars if present
-[ -f .env ] && . .env
+[ -f .env ] && . ./.env
 
 # Build docker image
 docker-compose up --build -d
