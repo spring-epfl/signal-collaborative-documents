@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Load env vars if present
-[ -f .env ] && . .env
+[ -f .env ] && . ./.env
 
 # Configurable startup delay (seconds). 
 SLEEP_SECS="${SIGNAL_CLI_STARTUP_DELAY_SECS:-5}"
@@ -35,8 +35,7 @@ log "Installing dependencies in crdt-benchmarks (this may take a moment)..."
 )
 
 log "Launching signal-cli daemon with config: $SIGNAL_CONFIG"
-source .env
-signal-cli --config="$SIGNAL_CONFIG" --account=$ACCOUNT_1 --verbose daemon --http > signal-cli.1.log 2>&1 &
+signal-cli --config="$SIGNAL_CONFIG" --account=$ACCOUNT_1 --verbose daemon --http &> signal-cli.1.log &
 SIGNAL_PID=$!
 log "signal-cli started in background (pid=$SIGNAL_PID). Waiting ${SLEEP_SECS}s for readiness..."
 sleep "$SLEEP_SECS"

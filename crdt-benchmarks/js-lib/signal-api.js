@@ -97,7 +97,7 @@ export async function sendMessage(account, groupId, message) {
       message: message
     });
   } catch (e) {
-    // Surface rate-limit details from the JSON-RPC error
+    // Surface JSON-RPC error
     const d = e && (e.data || e.raw || {});
     let challenge = d.challenge || d.token;
     if (!challenge) {
@@ -107,8 +107,9 @@ export async function sendMessage(account, groupId, message) {
     const options = d.options || d.availableOptions;
     const wait = d.wait ?? d.retryAfter;
 
-    console.error('[signal rate-limit]',
-      `code=${e.code ?? 'n/a'}`,
+    console.error('[signal-cli error] ',
+      e,
+      `;code=${e.code ?? 'n/a'}`,
       challenge ? `challenge=${challenge}` : 'challenge=n/a',
       options ? `options='${Array.isArray(options) ? options.join(',') : String(options)}'` : 'options=n/a',
       (wait !== undefined) ? `wait=${wait}` : 'wait=n/a'
