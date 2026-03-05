@@ -88,7 +88,7 @@ preflight_tc() {
   if [ $rc -ne 0 ]; then
     if echo "$out" | grep -qi 'Operation not permitted'; then
       echo "ERROR: tc needs CAP_NET_ADMIN inside the container."
-      echo "User docker-compose, or recreate your container with: docker run --cap-add NET_ADMIN --name $CTR <image> ..."
+      echo "Use docker compose, or recreate your container with: docker run --cap-add NET_ADMIN --name $CTR <image> ..."
       exit 1
     elif echo "$out" | grep -qi 'not found'; then
       echo "ERROR: 'tc' not found in container. Install iproute2 with `apt-get install iproute2`."

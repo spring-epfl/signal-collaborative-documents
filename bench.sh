@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 set -euo pipefail
 
 # Argument parsing
@@ -17,7 +17,7 @@ fi
 [ -f .env ] && . ./.env
 
 # Build docker image
-docker-compose up --build -d
+docker compose up --build -d
 
  # Run benchmarks for selected mode
 ./netprofile.sh "$MODE"
@@ -38,4 +38,4 @@ done
 # uv run --with jupyter jupyter execute analysis_4.ipynb
 
 # Tear down docker containers
-docker-compose down
+docker compose down

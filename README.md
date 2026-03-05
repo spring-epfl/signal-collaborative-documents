@@ -2,10 +2,8 @@
 
 ## Dependencies
 
-You will need Docker to run the experiments. 
-To generate plots from the raw benchmark data, you will need [uv](https://docs.astral.sh/uv/). 
-
-We give scripts for installing (non-Docker) dependencies on Linux (`./install-dependencies-linux.sh`) and MacOS (`./install-dependencies-macos.sh`). You may either call these scripts directly, or manually follow the installation commands therein.
+You will need Docker to run the experiments (tested with version 28.1.1). 
+To generate plots from the raw benchmark data, you will need [uv](https://docs.astral.sh/uv/) (tested with version 0.10.7). 
 
 ## Benchmarking
 
@@ -41,7 +39,7 @@ Internally, each experiment script runs `./netprofile.sh <slow|fast|off>` to res
 Set up the docker container with
 
 ```bash
-docker-compose up --build -d
+docker compose up --build -d
 ./netprofile.sh [slow|fast|off] # Sets latency and bandwidth in container
 docker exec -it e2ee-cd /bin/bash  # Open shell in Docker container
 ```
